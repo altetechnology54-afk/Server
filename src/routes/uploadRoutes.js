@@ -37,9 +37,8 @@ const upload = multer({
     },
 });
 
-// Create uploads directory if it doesn't exist
-// Create uploads directory if it doesn't exist (not on Vercel)
-if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+// Create uploads directory if it doesn't exist (only in local environments)
+if (!process.env.VERCEL) {
     const fs = require('fs');
     if (!fs.existsSync('uploads')) {
         fs.mkdirSync('uploads');
