@@ -15,6 +15,7 @@ const catalogSectionRoutes = require('./routes/catalogSectionRoutes');
 const authRoutes = require('./routes/authRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
 const homeRoutes = require('./routes/homeRoutes');
+const staticPagesRoutes = require('./routes/staticPages');
 
 let server;
 
@@ -36,6 +37,7 @@ app.use('/api/catalog-sections', catalogSectionRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/upload', uploadRoutes);
 app.use('/api/home', homeRoutes);
+app.use('/api/static-pages', staticPagesRoutes);
 
 const errorHandler = require('./middleware/error');
 app.use(errorHandler);
