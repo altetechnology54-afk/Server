@@ -14,6 +14,7 @@ connectDB();
 const catalogSectionRoutes = require('./routes/catalogSectionRoutes');
 const authRoutes = require('./routes/authRoutes');
 const uploadRoutes = require('./routes/uploadRoutes');
+const homeRoutes = require('./routes/homeRoutes');
 
 let server;
 
@@ -34,6 +35,7 @@ if (process.env.NODE_ENV === 'development') {
 app.use('/api/catalog-sections', catalogSectionRoutes);
 app.use('/api/auth', authRoutes);
 app.use('/api/upload', uploadRoutes);
+app.use('/api/home', homeRoutes);
 
 const errorHandler = require('./middleware/error');
 app.use(errorHandler);

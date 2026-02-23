@@ -156,6 +156,171 @@ const infoSections = [
             { artNr: 'TS', description: { de: 'Tiefensonde/ Depth Measurments 8/10/11,5/13/16 ø 1,9mm/2,7mm', en: 'Depth Gauge 8/10/11.5/13/16' }, category: { de: 'Instrumente', en: 'Instruments' } },
             { artNr: 'DMR', description: { de: 'Drehmoment-Ratsche / Torque Rachet: Implant=30 N Abutment= 15-20 N', en: 'Torque Ratchet' }, category: { de: 'Instrumente', en: 'Instruments' } }
         ]
+    },
+    {
+        id: 'garantie-reparatur',
+        type: 'info',
+        name: {
+            de: 'Garantie + Reparatur',
+            en: 'Warranty + Repair'
+        },
+        title: {
+            de: 'Garantie + Reparatur',
+            en: 'Warranty + Repair'
+        },
+        description: {
+            de: 'Bei allen Artikeln gilt selbstverständlich die gesetzliche Gewährleistungsfrist von 2 Jahren.\n\nDarüber hinaus gewährt der Hersteller arnica eine Herstellergarantie von 3 Jahren.',
+            en: 'All items are of course subject to the statutory warranty period of 2 years.\n\nIn addition, the manufacturer arnica grants a manufacturer\'s warranty of 3 years.'
+        },
+        subDescription: {
+            de: 'Und wenn mal was kaputtgeht?',
+            en: 'And if something breaks?'
+        },
+        applicationArea: {
+            de: '(Natürlich im Gewährleistung- oder Garantiefall kostenlos)\n\nBitte beachten Sie die die Garantiehinweise des Herstellers.\n\nUnsere Kundenberater helfen Ihnen gerne weiter.\nRufen Sie uns an oder schreiben Sie eine E-Mail! at-implantate@t-online.de\n\nBitte teilen Sie uns folgende Informationen mit:\nRechnungsnummer, Datum der Rechnung und Gerätetyp.',
+            en: '(Of course free of charge in the event of a warranty or guarantee claim)\n\nPlease note the manufacturer\'s warranty information.\n\nOur customer advisors will be happy to help you.\nCall us or write an email! at-implantate@t-online.de\n\nPlease let us know the following information:\nInvoice number, date of the invoice and device type.'
+        },
+        benefitBar: {
+            de: 'QUALITÄT - VERTRAUEN - SERVICE',
+            en: 'QUALITY - TRUST - SERVICE'
+        },
+        images: {
+            hero: ''
+        },
+        variants: [],
+        articles: []
+    },
+    {
+        id: 'versand',
+        type: 'info',
+        name: {
+            de: 'Versand',
+            en: 'Shipping'
+        },
+        title: {
+            de: 'Versand',
+            en: 'Shipping'
+        },
+        description: {
+            de: 'Details zum Versand und zur Lieferung.',
+            en: 'Details about shipping and delivery.'
+        },
+        subDescription: {
+            de: 'Lieferzeiten und Bedingungen',
+            en: 'Delivery times and conditions'
+        },
+        applicationArea: {
+            de: 'Weltweiter Versand verfügbar.',
+            en: 'Worldwide shipping available.'
+        },
+        benefitBar: {
+            de: 'SCHNELL - ZUVERLÄSSIG - SICHER',
+            en: 'FAST - RELIABLE - SECURE'
+        },
+        images: {
+            hero: ''
+        },
+        variants: [],
+        articles: []
+    },
+    {
+        id: 'bezahlung',
+        type: 'info',
+        name: {
+            de: 'Bezahlung',
+            en: 'Payment'
+        },
+        title: {
+            de: 'Bezahlung',
+            en: 'Payment'
+        },
+        description: {
+            de: 'Preise und Zahlungen\nDie Preise verstehen sich als Waren-, Dienstleistungswert ohne Nachlässe sowie zuzüglich der jeweils gültigen Umsatzsteuer.\nMit Erscheinen eines neuen Kataloges werden alle früheren Preislisten ungültig.\nUnsere Rechnungen sind sofort fällig und binnen 14 Tagen ab Rechnungsdatum fällig, soweit nichts anderes vereinbart ist.',
+            en: 'Prices and Payments\nPrices are valued as goods and services without discounts and plus the currently applicable VAT.\nWith the release of a new catalog, all previous price lists become invalid.\nOur invoices are due immediately and within 14 days of the invoice date, unless otherwise agreed.'
+        },
+        subDescription: {
+            de: 'Zahlungsbedingungen',
+            en: 'Payment Terms'
+        },
+        applicationArea: {
+            de: 'Rechnungskauf möglich.',
+            en: 'Purchase on account possible.'
+        },
+        benefitBar: {
+            de: 'TRANSPARENZ - SICHERHEIT - VERTRAUEN',
+            en: 'TRANSPARENCY - SECURITY - TRUST'
+        },
+        images: {
+            hero: ''
+        },
+        variants: [],
+        articles: []
+    },
+    {
+        id: 'widerrufsrecht',
+        type: 'info',
+        name: {
+            de: 'Widerrufsrecht',
+            en: 'Right of Withdrawal'
+        },
+        title: {
+            de: 'Widerrufsrecht',
+            en: 'Right of Withdrawal'
+        },
+        description: {
+            de: 'Widerrufsbelehrung\n\nDetails zum Widerrufsrecht für Verbraucher.',
+            en: 'Cancellation Policy\n\nDetails of the right of withdrawal for consumers.'
+        },
+        subDescription: {
+            de: 'Ihre Sicherheit beim Kauf',
+            en: 'Your security when purchasing'
+        },
+        applicationArea: {
+            de: 'Gesetzliches Widerrufsrecht.',
+            en: 'Statutory right of withdrawal.'
+        },
+        benefitBar: {
+            de: 'SCHUTZ - TRANSPARENZ - KLARE REGELN',
+            en: 'PROTECTION - TRANSPARENCY - CLEAR RULES'
+        },
+        images: {
+            hero: ''
+        },
+        variants: [],
+        articles: []
+    },
+    {
+        id: 'agb',
+        type: 'info',
+        name: {
+            de: 'AGB',
+            en: 'T&C'
+        },
+        title: {
+            de: 'Verkaufs- und Lieferungsbedingungen',
+            en: 'Terms and Conditions'
+        },
+        description: {
+            de: '1. Allgemein\nDiese Lieferbedingungen gelten für alle von uns vertriebenen Produkte. Mit der Auftragserteilung anerkennt der Vertragspartner unsere Bedingungen. Entgegenstehende Bedingungen gelten nur, wenn diese schriftlich vereinbart werden.\n\n2. Vertragsabschluss, Vertragsinhalt\nEin Vertrag kommt erst mit unserer schriftlichen Auftragsbestätigung oder mit Auslieferung der vereinbarten Leistungen zustande. Schriftform gilt auch für Zusicherungen, Nebenabreden und nachträgliche Änderungen. Der Besteller ist an dem erteilten Auftrag gebunden. Der Kunde erklärt sich damit einverstanden, dass wir Auskünfte über seine Bonität einholen. Bei negativer Prüfung behalten wir uns die Nichterfüllung des Auftrages vor.',
+            en: '1. General\nThese delivery conditions apply to all products sold by us. By placing an order, the contractual partner acknowledges our conditions. Conflicting conditions only apply if they are agreed in writing.\n\n2. Conclusion of contract, contract content\nA contract is only concluded with our written order confirmation or with the delivery of the agreed services. Written form also applies to assurances, side agreements and subsequent changes. The customer is bound by the order placed. The customer agrees that we may obtain information about his creditworthiness. In the event of a negative check, we reserve the right not to fulfill the order.'
+        },
+        subDescription: {
+            de: '3. Preise und Zahlungen\nDie Preise verstehen sich als Waren-, Dienstleistungswert ohne Nachlässe sowie zuzüglich der jeweils gültigen Umsatzsteuer. Mit Erscheinen eines neuen Kataloges werden alle früheren Preislisten ungültig. Unsere Rechnungen sind sofort fällig und binnen 14 Tagen ab Rechnungsdatum fällig, soweit nichts anderes vereinbart ist.',
+            en: '3. Prices and Payments\nPrices are to be understood as the value of goods and services without discounts and plus the currently applicable VAT. When a new catalogue appears, all previous price lists become invalid. Our invoices are due immediately and within 14 days of the invoice date, unless otherwise agreed.'
+        },
+        applicationArea: {
+            de: '4. Gefahrenübergang, Kontrolle, Reklamationspflicht\nDie Gefahr geht mit der Auslieferung an den Versandbeauftragten auf den Auftraggeber über. Nur auf besonderen schriftlichen Auftrag des Bestellers veranlassen wir auf Kosten des Bestellers den Abschluss von Versicherungen. Der Vertragspartner ist verpflichtet, die Ware auf Mängel zu prüfen und etwaige Mängel unverzüglich, längstens binnen 14 Tagen schriftlich zu reklamieren.\n\n5. Gewährleistungen, Rückgaberecht\nSoweit im Folgenden nichts Abweichendes bestimmt ist, leisten wir für die gelieferten Produkte in der Weise Gewähr, dass wir die Produkte durch einwandfreie Produkte ersetzen. Die Frist für die Verjährung des Anspruchs auf Gewährleistung beträgt vom Tage des Gefahrübergangs an gerechnet 12 Monate. Der Besteller ist verpflichtet, uns festgestellte Material-, Liefer- oder Herstellungsfehler sowie Transportschäden unverzüglich nach Erhalt mitzuteilen. Für Verbrauchsmaterialien hat der Besteller innerhalb von 14 Tagen für von uns gelieferte Ware ein Rückgaberecht.',
+            en: '4. Transfer of risk, control, obligation to complain\nThe risk passes to the client upon delivery to the shipping agent. We only arrange for the conclusion of insurance policies at the customer\'s expense upon special written order from the customer. The contractual partner is obliged to check the goods for defects and to complain about any defects in writing without delay, at the latest within 14 days.\n\n5. Warranties, right of return\nUnless otherwise specified below, we provide a warranty for the delivered products by replacing the products with perfect products. The period for the limitation of the claim for warranty is 12 months starting from the day of the transfer of risk. The customer is obliged to inform us immediately after receipt of any material, delivery or manufacturing errors discovered as well as transport damage. For consumables, the customer has a right of return for goods delivered by us within 14 days.'
+        },
+        benefitBar: {
+            de: '6. Ausschluss von Schadensersatz, Haftungsbegrenzung, Rücktritt\n7. Eigentumsvorbehalt\n8. Gerichtsstand: München\n9. Nebenabreden',
+            en: '6. Exclusion of damages, limitation of liability, withdrawal\n7. Retention of title\n8. Place of jurisdiction: Munich\n9. Side agreements'
+        },
+        images: {
+            hero: ''
+        },
+        variants: [],
+        articles: []
     }
 ];
 
