@@ -7,9 +7,10 @@ const { protect } = require('../middleware/auth');
 const router = express.Router();
 
 // Configure Multer for temporary storage
+const os = require('os');
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
-        cb(null, 'uploads/');
+        cb(null, os.tmpdir());
     },
     filename: function (req, file, cb) {
         cb(null, `${file.fieldname}-${Date.now()}${path.extname(file.originalname)}`);
@@ -37,9 +38,12 @@ const upload = multer({
 });
 
 // Create uploads directory if it doesn't exist
-const fs = require('fs');
-if (!fs.existsSync('uploads')) {
-    fs.mkdirSync('uploads');
+// Create uploads directory if it doesn't exist (not on Vercel)
+if (process.env.NODE_ENV !== 'production' || !process.env.VERCEL) {
+    const fs = require('fs');
+    if (!fs.existsSync('uploads')) {
+        fs.mkdirSync('uploads');
+    }
 }
 
 router.post('/', protect, upload.single('image'), uploadImage);

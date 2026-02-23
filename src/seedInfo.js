@@ -32,6 +32,7 @@ const infoSections = [
             de: 'SICHERHEIT - PRÄZISION - STERILITÄT',
             en: 'SAFETY - PRECISION - STERILITY'
         },
+        images: { hero: '' },
         variants: []
     },
     {
@@ -61,6 +62,7 @@ const infoSections = [
             de: 'Außengekühlter chirurgischer Stahl...',
             en: 'High-precision surgical steel...'
         },
+        images: { hero: '' },
         variants: [
             { diameter: '3,30', hex: '#FFEB3B', lengths: [] },
             { diameter: '3,75', hex: '#F44336', lengths: [] },
@@ -96,6 +98,7 @@ const infoSections = [
             de: 'EINFACHHEIT - PRÄZISION - SICHERHEIT',
             en: 'SIMPLICITY - PRECISION - SAFETY'
         },
+        images: { hero: '' },
         variants: [
             { diameter: '2,0mm', color: 'Grau', hex: '#9E9E9E', lengths: ['10mm', '11,5mm', '13mm'] },
             { diameter: '2,8mm', color: 'Gelb', hex: '#FFEB3B', lengths: ['10mm', '11,5mm', '13mm'] },
@@ -140,6 +143,7 @@ const infoSections = [
             de: 'PRÄZISION - EFFIZIENZ - VOLLSTÄNDIGKEIT',
             en: 'PRECISION - EFFICIENCY - COMPLETENESS'
         },
+        images: { hero: '' },
         variants: [],
         articles: [
             { artNr: 'OPTL', description: { de: 'Op-Tray Leer inkl. Platte / empty Surgical Kit', en: 'Empty Op-Tray incl. plate' }, category: { de: 'Tray', en: 'Tray' } },

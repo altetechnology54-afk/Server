@@ -11,7 +11,7 @@ const connectDB = async () => {
             console.error('\n⚠️  CONNECTION FAILED: This is likely due to IP Whitelisting in MongoDB Atlas.');
             console.error('Please ensure you have whitelisted 0.0.0.0/0 or your current machine IP in the Atlas Network Access panel.\n');
         }
-        process.exit(1);
+        throw error;
     }
 };
 
