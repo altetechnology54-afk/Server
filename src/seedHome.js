@@ -1,8 +1,9 @@
 const mongoose = require('mongoose');
 const dotenv = require('dotenv');
+const path = require('path');
 const HomeContent = require('./models/HomeContent');
 
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, '../.env') });
 
 const initialHomeData = [
     {
@@ -10,7 +11,7 @@ const initialHomeData = [
         isActive: true,
         slides: [
             {
-                image: '/Users/abdullahalhasan/.gemini/antigravity/brain/4538d933-8791-47f4-823c-32d65be397de/hero_slider_1_premium_1771866161765.png',
+                image: 'https://images.unsplash.com/photo-1629482426626-d62cc7e2a96a?q=80&w=2070&auto=format&fit=crop',
                 title: {
                     de: 'AL-TECHNOLOGY IMPLANTATE',
                     en: 'AL-TECHNOLOGY IMPLANTS'
@@ -23,7 +24,7 @@ const initialHomeData = [
                 order: 1
             },
             {
-                image: '/Users/abdullahalhasan/.gemini/antigravity/brain/4538d933-8791-47f4-823c-32d65be397de/hero_slider_2_premium_1771866308554.png',
+                image: 'https://images.unsplash.com/photo-1606811841660-1b5168c5c2b8?q=80&w=1974&auto=format&fit=crop',
                 title: {
                     de: 'QUALITÄT & PRÄZISION',
                     en: 'QUALITY & PRECISION'
@@ -41,6 +42,9 @@ const initialHomeData = [
 
 const seedHome = async () => {
     try {
+        if (!process.env.MONGODB_URI) {
+            throw new Error('MONGODB_URI is not defined in .env');
+        }
         await mongoose.connect(process.env.MONGODB_URI);
         console.log('MongoDB Connected...');
 
