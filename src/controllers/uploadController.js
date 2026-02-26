@@ -17,10 +17,24 @@ exports.uploadImage = async (req, res, next) => {
             return res.status(400).json({ success: false, error: 'Please upload a file' });
         }
 
+        // Determine resource type
+        const isPdf = req.file.originalname.toLowerCase().endsWith('.pdf') || req.file.mimetype === 'application/pdf';
+        const resourceType = isPdf ? 'raw' : 'image';
+
         // Upload to cloudinary
         const result = await cloudinary.uploader.upload(req.file.path, {
             folder: 'at-implantate',
             use_filename: true,
+            resource_type: resourceType,
+            type: 'upload', // Ensure it's public
+            access_mode: 'public' // Explicitly public
+        });
+
+        console.log('Cloudinary response:', {
+            resource_type: result.resource_type,
+            type: result.type,
+            format: result.format,
+            secure_url: result.secure_url
         });
 
         // Remove file from local storage
