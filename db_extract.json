@@ -1,0 +1,266 @@
+[dotenv@17.3.1] injecting env (9) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+[
+  {
+    "name": {
+      "de": "Intelligentes Bohrsystem",
+      "en": "Intelligent Drilling System"
+    },
+    "title": {
+      "de": "Bohrsystem / Das Intelligenteste Bohrsystem der Welt",
+      "en": "Drilling System / The Intelligent drilling system in the World"
+    },
+    "description": {
+      "de": "Schluss mit Bohrerstopper und Bohrhülsen. Nehmen Sie einfach den Bohrer, der zu der Implantatlänge passt!",
+      "en": "No more drill stopper and drill cores. Just take the drill that fits the implant length!"
+    },
+    "subDescription": {
+      "de": "Das AL-Techno-System bietet ein sicheres und einfaches Bohrverfahren durch die drei Bohrerlängen 10 mm, 11,5 mm und 13 mm passend zu den Implantatlängen.",
+      "en": "The A -Techno system offers a safe and easy drilling by the three drill length 10 mm, 11.5 mm and 13 mm to match the implant length."
+    },
+    "benefitBar": {
+      "de": "EINFACHHEIT - PRÄZISION - SICHERHEIT",
+      "en": "SIMPLICITY - PRECISION - SAFETY"
+    },
+    "applicationArea": {
+      "de": "Sie nehmen die passende Bohrerlänge und bohren bis zum Anschlag, einfacher und sicherer geht es nicht.",
+      "en": "Take the Matching drill length and drill to the stop, easier and safer it gets."
+    },
+    "images": {
+      "hero": ""
+    },
+    "_id": "699c796e7b926795cbd7fc08",
+    "id": "bohrsystem",
+    "__v": 0,
+    "articles": [
+      {
+        "description": {
+          "de": "Rosenbohrer / Round Bar Drill ø 2,0 mm Länge/ Length 22 mm. 3 mm",
+          "en": "Round Bar Drill ø 2,0 mm Length 22 mm. 3 mm"
+        },
+        "category": {
+          "de": "Standard",
+          "en": "Standard"
+        },
+        "artNr": "Ros 1",
+        "image": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146166/at-implantate/image-1772146165776_e1xfuz.jpg",
+        "_id": "69a0cd59f0279e0989f20302"
+      },
+      {
+        "description": {
+          "de": "Corticalis-Bohrer / Cortical Drill",
+          "en": "Cortical Drill"
+        },
+        "category": {
+          "de": "Standard",
+          "en": "Standard"
+        },
+        "artNr": "Cor 2",
+        "image": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146168/at-implantate/image-1772146168171_zydlqe.jpg",
+        "_id": "69a0cd59f0279e0989f20303"
+      },
+      {
+        "description": {
+          "de": "Keramikbohrer / Ceramic drills ø 2,0 mm außerordentlich scharf und unterliegen keinem Verschleiß",
+          "en": "Ceramic drills ø 2,0 mm exceptionally sharp and subject to no wear"
+        },
+        "category": {
+          "de": "Standard",
+          "en": "Standard"
+        },
+        "artNr": "Cer 3",
+        "image": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146170/at-implantate/image-1772146170267_nqsx82.jpg",
+        "_id": "69a0cd59f0279e0989f20304"
+      },
+      {
+        "description": {
+          "de": "ø 3,2 mm / ø 2,6 mm Länge / Length 6 mm",
+          "en": "ø 3.2 mm / ø 2.6 mm Length 6 mm"
+        },
+        "category": {
+          "de": "konische Bohrer / Conical Drills",
+          "en": "Conical Drills"
+        },
+        "artNr": "CON 32",
+        "image": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146173/at-implantate/image-1772146172793_wow2yt.jpg",
+        "_id": "69a0cd59f0279e0989f20305"
+      },
+      {
+        "description": {
+          "de": "ø 3,8 mm / ø 3,0 mm Länge / Length 6 mm",
+          "en": "ø 3.8 mm / ø 3.0 mm Length 6 mm"
+        },
+        "category": {
+          "de": "konische Bohrer / Conical Drills",
+          "en": "Conical Drills"
+        },
+        "artNr": "CON 38",
+        "image": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146176/at-implantate/image-1772146175327_u4tzik.jpg",
+        "_id": "69a0cd59f0279e0989f20306"
+      },
+      {
+        "description": {
+          "de": "ø 2,0mm Länge / Length 10 mm",
+          "en": "ø 2.0mm Length 10 mm"
+        },
+        "category": {
+          "de": "Zylindrische Bohrer / Cylindrical Drills",
+          "en": "Cylindrical Drills"
+        },
+        "artNr": "Cy2010",
+        "image": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146179/at-implantate/image-1772146179125_j9ig3u.jpg",
+        "_id": "69a0cd59f0279e0989f20307"
+      }
+    ],
+    "createdAt": "2026-02-23T15:59:41.319Z",
+    "type": "info",
+    "updatedAt": "2026-02-26T22:49:43.807Z",
+    "variants": [
+      {
+        "diameter": "2,0mm",
+        "color": "Grau",
+        "hex": "#9E9E9E",
+        "lengths": [
+          "10mm",
+          "11,5mm",
+          "13mm"
+        ],
+        "boxImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146136/at-implantate/image-1772146134927_f0aj0s.jpg",
+        "implantImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146139/at-implantate/image-1772146137301_cqdrh6.jpg",
+        "_id": "69a0cd59f0279e0989f202fc"
+      },
+      {
+        "diameter": "2,8mm",
+        "color": "Gelb",
+        "hex": "#FFEB3B",
+        "lengths": [
+          "10mm",
+          "11,5mm",
+          "13mm"
+        ],
+        "boxImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146140/at-implantate/image-1772146139961_r1tdic.jpg",
+        "implantImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146146/at-implantate/image-1772146145635_qoxc6b.jpg",
+        "_id": "69a0cd59f0279e0989f202fd"
+      },
+      {
+        "diameter": "3,2mm",
+        "color": "Rot",
+        "hex": "#F44336",
+        "lengths": [
+          "10mm",
+          "11,5mm",
+          "13mm"
+        ],
+        "boxImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146148/at-implantate/image-1772146147709_ucd9xu.jpg",
+        "implantImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146145/at-implantate/image-1772146143878_cil9za.jpg",
+        "_id": "69a0cd59f0279e0989f202fe"
+      },
+      {
+        "diameter": "3,8mm",
+        "color": "Blau",
+        "hex": "#2196F3",
+        "lengths": [
+          "10mm",
+          "11,5mm",
+          "13mm"
+        ],
+        "boxImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146153/at-implantate/image-1772146153052_fe5b6z.jpg",
+        "implantImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146150/at-implantate/image-1772146150197_mkzwb8.jpg",
+        "_id": "69a0cd59f0279e0989f202ff"
+      },
+      {
+        "diameter": "4,2mm",
+        "color": "Grün",
+        "hex": "#4CAF50",
+        "lengths": [
+          "10mm",
+          "11,5mm",
+          "13mm"
+        ],
+        "boxImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146158/at-implantate/image-1772146157866_gyk3lo.jpg",
+        "implantImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146156/at-implantate/image-1772146155713_kdzkna.jpg",
+        "_id": "69a0cd59f0279e0989f20300"
+      },
+      {
+        "diameter": "5,2mm",
+        "color": "Weiss",
+        "hex": "#FFFFFF",
+        "lengths": [
+          "10mm",
+          "11,5mm",
+          "13mm"
+        ],
+        "boxImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146164/at-implantate/image-1772146162539_cng0ef.jpg",
+        "implantImage": "https://res.cloudinary.com/daiqcd139/image/upload/v1772146160/at-implantate/image-1772146160196_woqjrn.jpg",
+        "_id": "69a0cd59f0279e0989f20301"
+      }
+    ]
+  },
+  {
+    "name": {
+      "de": "Farbleitsystem",
+      "en": "Color Guide System"
+    },
+    "title": {
+      "de": "1. Implantate Farbleitsystem",
+      "en": "1. Implants Color guide system"
+    },
+    "description": {
+      "de": "Farbcodierung für verschiedene Implantat-Durchmesser",
+      "en": "Color coding for different implant diameters"
+    },
+    "subDescription": {
+      "de": "2. Farbcodierung Bohrer",
+      "en": "2. Color Code Drills"
+    },
+    "benefitBar": {
+      "de": "GELB - ROT - BLAU - GRÜN - WEISS",
+      "en": "YELLOW - RED - BLUE - GREEN - WHITE"
+    },
+    "applicationArea": {
+      "de": "Außengekühlter chirurgischer Stahl...",
+      "en": "High-precision surgical steel..."
+    },
+    "images": {
+      "hero": ""
+    },
+    "_id": "699ace1b7b926795cbd7a7e1",
+    "id": "farbleitsystem",
+    "__v": 0,
+    "createdAt": "2026-02-22T09:36:27.719Z",
+    "type": "info",
+    "updatedAt": "2026-02-26T22:46:49.456Z",
+    "variants": [
+      {
+        "diameter": "3,30",
+        "hex": "#FFEB3B",
+        "lengths": [],
+        "_id": "69a0cd59f0279e0989f202f1"
+      },
+      {
+        "diameter": "3,75",
+        "hex": "#F44336",
+        "lengths": [],
+        "_id": "69a0cd59f0279e0989f202f2"
+      },
+      {
+        "diameter": "4,20",
+        "hex": "#03A9F4",
+        "lengths": [],
+        "_id": "69a0cd59f0279e0989f202f3"
+      },
+      {
+        "diameter": "5,00",
+        "hex": "#4CAF50",
+        "lengths": [],
+        "_id": "69a0cd59f0279e0989f202f4"
+      },
+      {
+        "diameter": "6,00",
+        "hex": "#FFFFFF",
+        "lengths": [],
+        "_id": "69a0cd59f0279e0989f202f5"
+      }
+    ],
+    "articles": []
+  }
+]

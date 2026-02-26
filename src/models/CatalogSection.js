@@ -48,6 +48,11 @@ const catalogSectionSchema = new mongoose.Schema({
     variants: [variantSchema],
     images: {
         hero: String,
+        tubeInTube: String,
+        insertMount: String,
+        deckschraube: String,
+        diagramImage: String,
+        extraImages: [String]
     },
     articles: [{
         artNr: String,
