@@ -21,13 +21,15 @@ exports.uploadImage = async (req, res, next) => {
         const isPdf = req.file.originalname.toLowerCase().endsWith('.pdf') || req.file.mimetype === 'application/pdf';
         const resourceType = isPdf ? 'raw' : 'image';
 
-        // Upload to cloudinary
+        // Upload to cloudinary with large file support
         const result = await cloudinary.uploader.upload(req.file.path, {
             folder: 'at-implantate',
             use_filename: true,
             resource_type: resourceType,
             type: 'upload', // Ensure it's public
-            access_mode: 'public' // Explicitly public
+            access_mode: 'public', // Explicitly public
+            chunk_size: 6000000, // 6MB chunks for large files
+            timeout: 120000 // 2 minute timeout
         });
 
         console.log('Cloudinary response:', {
@@ -46,7 +48,23 @@ exports.uploadImage = async (req, res, next) => {
             public_id: result.public_id
         });
     } catch (err) {
-        console.error(err);
-        res.status(500).json({ success: false, error: 'Server Error' });
+        console.error('Upload error:', err);
+
+        // Clean up temp file if it exists
+        if (req.file && req.file.path) {
+            try {
+                fs.unlinkSync(req.file.path);
+            } catch (unlinkErr) {
+                console.error('Failed to delete temp file:', unlinkErr);
+            }
+        }
+
+        // Return detailed error message
+        const errorMessage = err.message || err.error?.message || 'Server Error';
+        res.status(500).json({
+            success: false,
+            error: errorMessage,
+            details: err.http_code ? `Cloudinary error (${err.http_code})` : undefined
+        });
     }
 };
